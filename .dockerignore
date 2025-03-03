@@ -1,0 +1,15 @@
+# Ignore virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore logs and test reports
+*.log
+*.coverage
+htmlcov/
+
+# Ignore Git and editor files
+.git/
+.vscode/
+.idea/
