@@ -1,0 +1,25 @@
+# Ignore the virtual environment folder
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore test reports & logs
+*.log
+*.coverage
+coverage.xml
+htmlcov/
+
+# Ignore environment variable files (if using dotenv)
+.env
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
+
+# Ignore dependency lock files (optional)
+Pipfile
+Pipfile.lock
