@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 
-from generateEmbeddings import save_embeddings
 from generate_opinion import LLMOutput
 from responseModel import Opinion
 from getData import getData
