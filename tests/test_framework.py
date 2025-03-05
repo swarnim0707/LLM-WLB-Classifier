@@ -35,8 +35,8 @@ def test_generate_opinion(mock_invoke, mock_llm):
 def test_generate_opinion_error(mock_invoke, mock_llm):
     mock_invoke.return_value.content = "Invalid JSON Response"
     result = mock_llm.generate_opinion("Invalid input", Opinion)
-    assert isinstance(result, str)  # Ensure error handling returns a string message
-    assert "Error" in result  # Basic check for error indication
+    assert isinstance(result, str) 
+    assert "Error" in result 
 
 # Test Data Saving
 @pytest.fixture
