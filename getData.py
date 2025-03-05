@@ -14,7 +14,7 @@ def save_tweets_to_json(data, filename="tweets.json"):
 def save_article_to_json(article, filename="articles.json"):
     try:
         if isinstance(article, pd.DataFrame):
-            article.to_json(filename, orient="records", indent=4)  # ✅ Proper DataFrame to JSON
+            article.to_json(filename, orient="records", indent=4)
         else:
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(article, f, indent=4, default=str)
